@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verkefni 6</title>
+    <link rel="stylesheet" href="Verkefni6.css">
+</head>
+<body>
+<div id="home"></div>
+<nav class="topnav">
+
+    <audio id="music" controls autoplay loop>
+        <source src="Tónlist/Fyrir aðal síðu.mp3" type="audio/mpeg">
+    </audio>
+
+    <h2 class="logo">PERSONA 5 ROYAL</h2>
+
+    <input type="checkbox" id="toggle">
+    <label for="toggle">&#9776;</label>
+
+    <section class="topmenu">
+        <a href="#home">Home</a>
+        <a href="#characters">Characters</a>
+        <a data-target="modal-example" onclick="toggleModal(event)">
+            Sign-up
+        </a>
+    </section>
+
+</nav>
+
+<section class="hero">
+
+    <div>
+        <picture>
+      <source media="(min-width:1280px)" srcset="Myndir og Vídjó/Persona 5 Royal 1280px.jpg">
+      <source media="(min-width:600px)" srcset="Myndir og Vídjó/Persona 5 Royal 768px.jpg">
+      <source media="(min-width:0px)" srcset="Myndir og Vídjó/Persona 5 Royal 480px.jpg">
+      <img src="Myndir og Vídjó/Persona 5 Royal 1280px.jpg">
+    </picture>
+       
+    </div>
+
+</section>
+<section class="game-info">
+
+    <div class="info-box">
+        <h2>Persona 5 Royal</h2>
+        <p>
+            Persona 5 Royal is a Japanese role-playing game developed by Atlus.
+            You play as a high school student who moves to Tokyo and starts
+            living a double life. During the day, you go to school and spend
+            time with friends. In another world, you become a Phantom Thief
+            and explore mysterious Palaces.
+        </p>
+    </div>
+
+    <div class="info-box">
+        <h2>The Story</h2>
+        <p>
+            The main story follows the Phantom Thieves as they try to change
+            the hearts of people who abuse their power. They enter Palaces,
+            which are worlds created from a person's distorted desires.
+        </p>
+    </div>
+
+    <div class="info-box">
+        <h2>Gameplay</h2>
+        <p>
+            Persona 5 Royal combines turn-based combat with everyday life.
+            You can go to school, make friends, improve your abilities and
+            explore Tokyo. During battles, you use Personas with different
+            abilities and weaknesses.
+        </p>
+    </div>
+
+</section>
+
+<section class="diagonal" id="characters">
+    <h2>Phantom Thieves</h2>
+
+    <div class="card-container">
+
+    <details ontoggle="changeMusic(this, 'Joker')">
+    <summary class="card">
+        <img src="Myndir og Vídjó/Joker.png">
+    </summary>
+
+    <iframe src="Joker skjal.html"
+            height="700px" width="100%">
+    </iframe>
+    </details>
+
+    <details ontoggle="changeMusic(this, 'Ryuji')">
+    <summary class="card">
+        <img src="Myndir og Vídjó/Ryuji.png">
+    </summary>
+
+    <iframe src="Ryuji skjal.html"
+            height="700px" width="100%">
+    </iframe>
+    </details>
+
+    <details ontoggle="changeMusic(this, 'Morgana')">
+    <summary class="card">
+        <img src="Myndir og Vídjó/Morgana.png">
+    </summary>
+
+    <iframe src="Morgana skjal.html"
+            height="700px" width="100%">
+    </iframe>
+    </details>
+
+    <details ontoggle="changeMusic(this, 'Ann')">
+    <summary class="card">
+        <img src="Myndir og Vídjó/Ann.png">
+    </summary>
+
+    <iframe src="Ann skjal.html"
+            height="700px" width="100%">
+    </iframe>
+    </details>
+
+    <details ontoggle="changeMusic(this, 'Yusuke')">
+    <summary class="card">
+        <img src="Myndir og Vídjó/Yusuke.png">
+    </summary>
+
+    <iframe src="Yusuke skjal.html"
+            height="700px" width="100%">
+    </iframe>
+    </details>
+
+    <details ontoggle="changeMusic(this, 'Makoto')">
+    <summary class="card">
+        <img src="Myndir og Vídjó/Makoto.png">
+    </summary>
+
+    <iframe src="Makoto skjal.html"
+            height="700px" width="100%">
+    </iframe>
+    </details>
+
+    <details ontoggle="changeMusic(this, 'Futaba')">
+    <summary class="card">
+        <img src="Myndir og Vídjó/Futaba.png">
+    </summary>
+
+    <iframe src="Futaba skjal.html"
+            height="700px" width="100%">
+    </iframe>
+    </details>
+
+    <details ontoggle="changeMusic(this, 'Haru')">
+    <summary class="card">
+        <img src="Myndir og Vídjó/Haru.png">
+    </summary>
+
+    <iframe src="Haru skjal.html"
+            height="700px" width="100%">
+    </iframe>
+    </details>
+
+    <details ontoggle="changeMusic(this, 'Akechi')">
+    <summary class="card">
+        <img src="Myndir og Vídjó/Akechi.png">
+    </summary>
+
+    <iframe src="Akechi skjal.html"
+            height="700px" width="100%">
+    </iframe>
+    </details>
+
+    <details ontoggle="changeMusic(this, 'Sumire')">
+    <summary class="card">
+        <img src="Myndir og Vídjó/Kasumi or Sumire.png">
+    </summary>
+
+    <iframe src="Kasumi or Sumire skjal.html"
+            height="700px" width="100%">
+    </iframe>
+    </details>
+
+    </div>
+
+</section>
+
+<section class="chatbox">
+        <input type="checkbox" id="check">
+        
+        <label for="check" role="button" class="outline">💬</label>
+        <div class="chat-content">
+          <p>How can we help you?</p>
+          <form action="#" method="get">
+            <textarea placeholder="write a message..." rows="5"></textarea>
+            <div><input type="text" name="name" required placeholder="Name"></div>
+            <div><input type="email" name="email" required placeholder="Email address"></div>
+            <button type="submit">Send</button>
+          </form>
+        </div>
+        
+      </section>
+<div class="map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d51862.59269416357!2d139.6513304928298!3d35.66685500391969!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188cb2eb3108d1%3A0xf11cd9b2395b6677!2sShibuya%2C%20Tokyo%2C%20Japan!5e0!3m2!1sen!2sis!4v1791726819042!5m2!1sen!2sis" width="600" height="450" style="border: 5px solid white;
+            box-shadow: 10px 10px #E60012;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+</div>
+<footer>
+    Persona 5 Royal - Tytus Lewinski - 2026 VEFÞ2VH05BU
+</footer>
+
+<!-- Modal -->
+      <section id="modal">
+        <button class="contrast" data-target="modal-example" onclick="toggleModal(event)">
+          Launch demo modal
+        </button>
+      </section>
+      <!-- Modal example -->
+    <dialog id="modal-example">
+      <article>
+        <header>
+          <button
+            aria-label="Close"
+            rel="prev"
+            data-target="modal-example"
+            onclick="toggleModal(event)"
+          ></button>
+          <h3>sign up to be Phantom Thief</h3>
+        </header>
+        <form method="get" id="login">
+          <input type="text" placeholder="Codename" required autofocus>
+          <input type="password" placeholder="Password" required>
+          <footer class="center">
+            <input type="submit" value="Sign up">
+            <!--button autofocus data-target="modal-example" onclick="toggleModal(event)">
+              Innskráning
+            </button-->
+          </footer>
+        </form>
+      </article>
+    </dialog>
+    
+<!-- javascript er alltaf neðst í /body/html -->
+<script src="js/modal.js"></script>
+<script>
+function changeMusic(details, character) {
+    let music = document.getElementById("music");
+
+    if (details.open) {
+        if (character == "Futaba") {
+            music.src = "Tónlist/Futaba síða.mp3";
+        } else if (character == "Joker") {
+            music.src = "Tónlist/Protagonist(Joker) síða.mp3";
+        } else if (character == "Ryuji") {
+            music.src = "Tónlist/Ryuji síða.mp3";
+        } else if (character == "Morgana") {
+            music.src = "Tónlist/Morgana síða.mp3";
+        } else if (character == "Ann") {
+            music.src = "Tónlist/Ann síða.mp3";
+        } else if (character == "Yusuke") {
+            music.src = "Tónlist/Yusuke síða.mp3";
+        } else if (character == "Makoto") {
+            music.src = "Tónlist/Makoto síða.mp3";
+        } else if (character == "Haru") {
+            music.src = "Tónlist/Haru síða.mp3";
+        } else if (character == "Akechi") {
+            music.src = "Tónlist/Akechi síða.mp3";
+        } else if (character == "Sumire") {
+            music.src = "Tónlist/Kasumi or Sumire síða.mp3";
+        }
+    } else {
+        music.src = "Tónlist/Fyrir aðal síðu.mp3";
+    }
+
+    music.play();
+}
+</script>
+</body>
+</html>
